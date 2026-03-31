@@ -9,7 +9,7 @@
        ============================================= -->
   <title>DEWDEW 듀듀 - 강동구 꽃집 | 합리적인 가격, 예약제, 무인운영</title>
   <meta name="description" content="서울 강동구 천호동 예약제 꽃집 DEWDEW(듀듀). 합리적인 가격의 꽃다발, 화환, 꽃바구니. 24시간 무인운영, 월~토 07:00~22:50 유인운영. 강동구 꽃 선물 전문.">
-  <meta name="keywords" content="강동구 꽃집, 천호동 꽃집, 성내동 꽃집, 강동구 꽃다발, 강동구 예약 꽃집, 듀듀 꽃집, dewdew 꽃집, 강동구 무인 꽃집, 강동구 꽃 선물, 강동구 화환, 서울 강동구 꽃">
+  <meta name="keywords" content="강동구 꽃집, 천호동 꽃집, 강동구 꽃다발, 강동구 예약 꽃집, 듀듀 꽃집, dewdew 꽃집, 강동구 무인 꽃집, 강동구 꽃 선물, 강동구 화환, 서울 강동구 꽃">
   <meta name="author" content="DEWDEW">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dewdew.vercel.app/">
@@ -97,6 +97,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+KR:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
@@ -117,6 +118,7 @@
       --font-display: 'Cormorant Garamond', serif;
       --font-korean: 'Noto Serif KR', serif;
       --font-body: 'DM Sans', sans-serif;
+      --font-logo: 'Pretendard', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -164,7 +166,7 @@
     }
 
     .nav-logo {
-      font-family: var(--font-display);
+      font-family: var(--font-logo);
       font-size: 28px;
       font-weight: 600;
       letter-spacing: 0.12em;
@@ -172,8 +174,8 @@
       text-decoration: none;
     }
 
-    .nav-logo span {
-      font-style: italic;
+    .logo-dew2 {
+      font-style: normal;
       color: var(--blush-deep);
     }
 
@@ -236,7 +238,7 @@
     }
 
     .hero-title {
-      font-family: var(--font-display);
+      font-family: var(--font-logo);
       font-size: clamp(72px, 8vw, 108px);
       font-weight: 300;
       line-height: 0.92;
@@ -245,10 +247,21 @@
       margin-bottom: 8px;
     }
 
-    .hero-title em {
-      font-style: italic;
-      color: var(--blush-deep);
+    .hero-title-kr {
       display: block;
+      font-family: var(--font-korean);
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--text-light);
+      letter-spacing: 0.3em;
+      margin-top: 8px;
+    }
+
+    .hero-title-dew2 {
+      font-style: normal;
+      color: var(--blush-deep);
+      display: inline;
+      font-family: var(--font-logo);
     }
 
     .hero-subtitle {
@@ -377,7 +390,7 @@
       font-family: var(--font-display);
       font-size: 15px;
       font-weight: 300;
-      font-style: italic;
+      font-style: normal;
       color: var(--green-pale);
       padding: 0 32px;
     }
@@ -415,7 +428,7 @@
     }
 
     .section-title em {
-      font-style: italic;
+      font-style: normal;
       color: var(--blush-deep);
     }
 
@@ -513,7 +526,7 @@
       font-family: var(--font-display);
       font-size: 36px;
       font-weight: 300;
-      font-style: italic;
+      font-style: normal;
       color: var(--green-pale);
       margin-bottom: 32px;
     }
@@ -686,15 +699,15 @@
     }
 
     .footer-logo {
-      font-family: var(--font-display);
+      font-family: var(--font-logo);
       font-size: 32px;
       font-weight: 600;
       letter-spacing: 0.1em;
       color: var(--cream);
     }
 
-    .footer-logo em {
-      font-style: italic;
+    .footer-logo .logo-dew2 {
+      font-style: normal;
       color: var(--blush);
     }
 
@@ -777,7 +790,7 @@
        NAVIGATION
   ══════════════════════════════════════ -->
   <nav id="navbar">
-    <a href="#" class="nav-logo">DEW<em>DEW</em></a>
+    <a href="#" class="nav-logo">DEW<span class="logo-dew2">DEW</span></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#hours">Hours</a></li>
@@ -793,22 +806,22 @@
     <div class="hero-left">
       <div class="hero-eyebrow fade-up">서울 강동구 꽃집</div>
       <h1 class="hero-title fade-up delay-1">
-        DEW
-        <em>DEW</em>
+        DEW<span class="hero-title-dew2">DEW</span>
+        <span class="hero-title-kr">듀듀</span>
       </h1>
       <p class="hero-subtitle fade-up delay-2">
         합리적인 가격의 꽃과<br>
-        감각적인 디자인.<br>
+        감도 높은 디자인.<br>
         당신의 마음을 전합니다.
       </p>
       <div class="hero-cta fade-up delay-3">
-        <a href="https://www.instagram.com/dewdew418" target="_blank" rel="noopener" class="btn-primary">
-          예약하기
+        <a href="https://booking.naver.com/booking/6/bizes/1132625" target="_blank" rel="noopener" class="btn-primary">
+          예약하러가기
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </a>
-        <a href="#about" class="btn-secondary">더 알아보기</a>
+        <a href="#about" class="btn-secondary">ABOUT DEWDEW</a>
       </div>
     </div>
 
@@ -835,7 +848,7 @@
       <span class="dot">·</span>
       <span>합리적인 가격</span>
       <span class="dot">·</span>
-      <span>감각적인 디자인</span>
+      <span>감도 높은 디자인</span>
       <span class="dot">·</span>
       <span>예약제 운영</span>
       <span class="dot">·</span>
@@ -847,7 +860,7 @@
       <span class="dot">·</span>
       <span>합리적인 가격</span>
       <span class="dot">·</span>
-      <span>감각적인 디자인</span>
+      <span>감도 높은 디자인</span>
       <span class="dot">·</span>
       <span>예약제 운영</span>
       <span class="dot">·</span>
@@ -876,7 +889,7 @@
         </p>
         <p>
           꽃다발 하나에도 받는 분의 감정을 담아,
-          감각적인 디자인으로 정성껏 준비합니다.
+          감도 높은 디자인으로 정성껏 준비합니다.
           예약제로 운영되어 대기 없이 픽업 가능하며,
           일요일과 야간에는 무인으로 편리하게 이용하실 수 있습니다.
         </p>
@@ -991,20 +1004,20 @@
   <!-- ══════════════════════════════════════
        RESERVATION CTA
   ══════════════════════════════════════ -->
-  <section class="reservation-section" id="reservation" aria-label="예약">
+    <section class="reservation-section" id="reservation" aria-label="예약">
     <div class="section-tag" style="text-align:center;justify-content:center;">예약하기</div>
     <h2 class="section-title" style="text-align:center;">
-      당신의 꽃을<br>
-      <em>지금 예약하세요</em>
+      &ldquo;잘 지내?&rdquo; 대신,<br>
+      그 사람만의 꽃 한 다발.
     </h2>
     <p>
-      특별한 날을 위한 꽃다발,<br>
-      소중한 사람에게 전하는 꽃 선물.<br>
-      DEWDEW가 정성껏 준비합니다.
+      좋아하는 색, 좋아하는 향, 좋아하는 분위기<br>
+      당신의 이야기를 꽃으로 옮겨드립니다.<br>
+      DEWDEW가 그 마음까지 담아 준비할게요.
     </p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="https://www.instagram.com/dewdew418" target="_blank" rel="noopener" class="btn-primary" style="font-size:14px;padding:16px 40px;">
-        인스타그램으로 예약
+      <a href="https://booking.naver.com/booking/6/bizes/1132625" target="_blank" rel="noopener" class="btn-primary" style="font-size:14px;padding:16px 40px;">
+        나만의 꽃다발 만들러 가기
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -1052,7 +1065,7 @@
        FOOTER
   ══════════════════════════════════════ -->
   <footer>
-    <div class="footer-logo">DEW<em>DEW</em></div>
+    <div class="footer-logo">DEW<span class="logo-dew2">DEW</span></div>
     <div class="footer-info">
       서울특별시 강동구 천호대로168가길 65 1층<br>
       월–토 07:00–22:50 · 일요일·야간 무인운영<br>
