@@ -7,8 +7,8 @@
   <!-- =============================================
        SEO & AI CRAWLER OPTIMIZATION
        ============================================= -->
-  <title>DEWDEW 듀듀 - 강동구 꽃집 | 합리적인 가격, 예약제, 무인운영</title>
-  <meta name="description" content="서울 강동구 천호동 예약제 꽃집 DEWDEW(듀듀). 합리적인 가격의 꽃다발, 화환, 꽃바구니. 24시간 무인운영, 월~토 07:00~22:50 유인운영. 강동구 꽃 선물 전문.">
+  <title>DEWDEW 듀듀 - 강동구 예약제 꽃집 | 당일픽업 · 24시간 무인운영</title>
+  <meta name="description" content="서울 강동구 천호동 예약제 꽃집 DEWDEW(듀듀). 꽃다발, 화환, 꽃바구니. 예약 후 대기 없이 당일픽업. 24시간 무인운영, 월~토 07:00~22:50. 강동구 꽃 선물 전문.">
   <meta name="keywords" content="강동구 꽃집, 천호동 꽃집, 강동구 꽃다발, 강동구 예약 꽃집, 듀듀 꽃집, dewdew 꽃집, 강동구 무인 꽃집, 강동구 꽃 선물, 강동구 화환, 서울 강동구 꽃">
   <meta name="author" content="DEWDEW">
   <meta name="robots" content="index, follow">
@@ -17,7 +17,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="business.business">
   <meta property="og:title" content="DEWDEW 듀듀 - 강동구 꽃집">
-  <meta property="og:description" content="합리적인 가격과 감도 높은 디자인. 서울 강동구 예약제·무인 꽃집 DEWDEW.">
+  <meta property="og:description" content="예약하고 대기 없이 픽업. 24시간 언제든 꽃을 들고 갈 수 있어요. 서울 강동구 예약제 꽃집 DEWDEW.">
   <meta property="og:url" content="https://dewdew.vercel.app/">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="DEWDEW">
@@ -25,7 +25,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DEWDEW 듀듀 - 강동구 꽃집">
-  <meta name="twitter:description" content="합리적인 가격과 감도 높은 디자인. 서울 강동구 예약제·무인 꽃집 DEWDEW.">
+  <meta name="twitter:description" content="예약하고 대기 없이 픽업. 24시간 언제든 꽃을 들고 갈 수 있어요. 서울 강동구 예약제 꽃집 DEWDEW.">
 
   <!-- =============================================
        SCHEMA.ORG STRUCTURED DATA (AI/SEO 핵심)
@@ -467,6 +467,15 @@
       transform: translateY(-2px);
     }
 
+    .feature-card--accent {
+      border-color: var(--blush);
+      background: linear-gradient(135deg, var(--ivory) 80%, #f5e8e0 100%);
+    }
+
+    .feature-card--accent:hover {
+      border-color: var(--blush-deep);
+    }
+
     .feature-icon {
       font-size: 24px;
       margin-bottom: 12px;
@@ -630,6 +639,7 @@
 
     .reservation-section .section-title {
       font-size: clamp(42px, 5vw, 68px);
+      letter-spacing: -0.01em;
     }
 
     .reservation-section p {
@@ -669,17 +679,23 @@
 
     .insta-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 12px;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      height: 480px;
     }
 
     .insta-placeholder {
-      aspect-ratio: 1;
       background: var(--green-pale);
       overflow: hidden;
       position: relative;
       cursor: pointer;
       transition: opacity 0.3s;
+      aspect-ratio: unset;
+    }
+
+    .insta-placeholder:first-child {
+      grid-row: 1 / 3;
     }
 
     .insta-placeholder:hover { opacity: 0.85; }
@@ -778,8 +794,10 @@
       .info-grid { grid-template-columns: 1fr; gap: 48px; }
       .reservation-section { padding: 72px 24px; }
       .instagram-section { padding: 48px 24px; }
-      .insta-grid { grid-template-columns: repeat(3, 1fr); }
-      .insta-placeholder:nth-child(n+4) { display: none; }
+      .insta-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; height: auto; }
+      .insta-placeholder:first-child { grid-row: auto; }
+      .insta-placeholder { aspect-ratio: 1; }
+      .insta-placeholder:nth-child(n+5) { display: none; }
       footer { padding: 40px 24px; flex-direction: column; gap: 24px; text-align: center; }
     }
   </style>
@@ -806,13 +824,13 @@
     <div class="hero-left">
       <div class="hero-eyebrow fade-up">서울 강동구 꽃집</div>
       <h1 class="hero-title fade-up delay-1">
-        DEW<span class="hero-title-dew2">DEW</span>
-        <span class="hero-title-kr">듀듀</span>
+        <span class="hero-title-kr" style="font-size:clamp(52px,6vw,80px);letter-spacing:0;color:var(--green-deep);">듀듀</span>
       </h1>
       <p class="hero-subtitle fade-up delay-2">
-        합리적인 가격의 꽃과<br>
-        감도 높은 디자인.<br>
-        당신의 마음을 전합니다.
+        "잘 지내?" 대신,<br>
+        꽃 한 다발.<br>
+        마음이 있는데 말이 안 될 때,<br>
+        DEWDEW가 대신 전할게요.
       </p>
       <div class="hero-cta fade-up delay-3">
         <a href="https://booking.naver.com/booking/6/bizes/1132625" target="_blank" rel="noopener" class="btn-primary">
@@ -846,11 +864,11 @@
     <div class="marquee-track">
       <span>Flowers for every moment</span>
       <span class="dot">·</span>
-      <span>합리적인 가격</span>
+      <span>꽃이 있는 하루</span>
       <span class="dot">·</span>
       <span>감도 높은 디자인</span>
       <span class="dot">·</span>
-      <span>예약제 운영</span>
+      <span>당일 예약 당일 픽업</span>
       <span class="dot">·</span>
       <span>24시간 무인 서비스</span>
       <span class="dot">·</span>
@@ -858,11 +876,11 @@
       <span class="dot">·</span>
       <span>Flowers for every moment</span>
       <span class="dot">·</span>
-      <span>합리적인 가격</span>
+      <span>꽃이 있는 하루</span>
       <span class="dot">·</span>
       <span>감도 높은 디자인</span>
       <span class="dot">·</span>
-      <span>예약제 운영</span>
+      <span>당일 예약 당일 픽업</span>
       <span class="dot">·</span>
       <span>24시간 무인 서비스</span>
       <span class="dot">·</span>
@@ -885,7 +903,7 @@
         <p>
           DEWDEW는 서울 강동구에 자리한 예약제 꽃집입니다.
           이른 아침의 이슬처럼 맑고 싱싱한 꽃을,
-          합리적인 가격으로 제공합니다.
+          꽃이 일상이 될 수 있는 가격으로 전합니다.
         </p>
         <p>
           꽃다발 하나에도 받는 분의 감정을 담아,
@@ -896,24 +914,48 @@
 
         <div class="about-features">
           <div class="feature-card">
-            <div class="feature-icon">🌸</div>
-            <div class="feature-title">합리적인 가격</div>
-            <div class="feature-desc">부담 없이 꽃을 선물할 수 있는 가격대</div>
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div class="feature-title">일상의 꽃</div>
+            <div class="feature-desc">특별한 날이 아니어도 괜찮아요. 꽃은 오늘도 어울려요.</div>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📅</div>
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+                <circle cx="8" cy="15" r="1" fill="var(--green-mid)"/>
+                <circle cx="12" cy="15" r="1" fill="var(--green-mid)"/>
+              </svg>
+            </div>
             <div class="feature-title">예약제 운영</div>
             <div class="feature-desc">대기 없이 원하는 시간에 픽업</div>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🕐</div>
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--green-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 15.5 12"/>
+              </svg>
+            </div>
             <div class="feature-title">24시간 무인</div>
             <div class="feature-desc">일요일, 야간에도 무인으로 이용 가능</div>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">✨</div>
-            <div class="feature-title">감각적 디자인</div>
-            <div class="feature-desc">트렌디하고 개성 있는 꽃 디자인</div>
+          <div class="feature-card feature-card--accent">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blush-deep)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.6 2.8-1.5 3.8C16.4 10.8 18 12.8 18 15c0 2.8-2.7 5-6 5s-6-2.2-6-5c0-2.2 1.6-4.2 3.5-5.2A4.9 4.9 0 0 1 8 6a4 4 0 0 1 4-4z"/>
+                <path d="M12 10 Q10 12 12 14 Q14 12 12 10z" fill="var(--blush)" stroke="none"/>
+              </svg>
+            </div>
+            <div class="feature-title" style="color:var(--blush-deep);">감각적 디자인</div>
+            <div class="feature-desc">트렌디하고 개성 있는, DEWDEW만의 꽃</div>
           </div>
         </div>
       </div>
@@ -962,9 +1004,10 @@
         <div style="margin-top:36px;padding:24px;border:1px solid rgba(200,217,194,0.2);">
           <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green-pale);opacity:0.6;margin-bottom:10px;">예약 안내</div>
           <p style="font-family:var(--font-korean);font-size:14px;font-weight:300;color:var(--cream);line-height:2;opacity:0.8;">
-            네이버 예약 또는 인스타그램 DM을 통해<br>
-            원하시는 날짜와 시간을 예약해 주세요.<br>
-            예약 후 대기 없이 바로 픽업 가능합니다.
+            새벽 4시도, 일요일 밤도 —<br>
+            꽃을 들고 갈 수 있어요.<br>
+            네이버 예약 또는 인스타그램 DM으로<br>
+            시간을 잡으면, 대기 없이 바로 픽업.
           </p>
         </div>
       </div>
