@@ -1,0 +1,59 @@
+# robots.txt for 듀듀 (DewDew) - https://www.dewdew.kr/
+# 서울 강동구 천호대로168가길 65 꽃집
+# Last updated: 2026
+
+# ===========================================
+# General Crawlers
+# ===========================================
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# ===========================================
+# Search Engines - Full Access
+# ===========================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Yeti
+Allow: /
+Crawl-delay: 0
+
+# ===========================================
+# AI Crawlers - Explicitly Allowed
+# ===========================================
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ===========================================
+# Sitemap
+# ===========================================
+Sitemap: https://www.dewdew.kr/sitemap.xml

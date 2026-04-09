@@ -1,0 +1,143 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "듀듀",
+  "alternateName": [
+    "DewDew",
+    "DEWDEW",
+    "dewdew 꽃집",
+    "강동구 듀듀"
+  ],
+  "url": "https://www.dewdew.kr/",
+  "description": "서울 강동구 천호대로168가길 65에 위치한 예약제 꽃집. 합리적인 가격과 감도 높은 디자인으로 강동구를 대표하는 플라워 브랜드. 월~일 07:00~22:50 운영, 무인 서비스 제공.",
+  "telephone": "+82-2-483-4954",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "천호대로168가길 65 1층",
+    "addressLocality": "강동구",
+    "addressRegion": "서울특별시",
+    "postalCode": "05408",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "37.5388",
+    "longitude": "127.1242"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "07:00",
+      "closes": "22:50"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+82-2-483-4954",
+    "contactType": "customer service",
+    "availableLanguage": {
+      "@type": "Language",
+      "name": "Korean"
+    },
+    "areaServed": "KR",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "07:00",
+      "closes": "22:50"
+    }
+  },
+  "sameAs": [
+    "https://www.instagram.com/dewdew418",
+    "https://booking.naver.com/booking/6/bizes/1132625"
+  ],
+  "hasMap": "https://map.naver.com/v5/search/서울 강동구 천호대로168가길 65",
+  "priceRange": "₩",
+  "areaServed": {
+    "@type": "Place",
+    "name": "서울 강동구 및 인근 지역"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "듀듀 플라워 서비스",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "꽃다발",
+          "description": "생일, 기념일, 졸업식, 프로포즈 등 맞춤형 꽃다발 제작"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "꽃바구니",
+          "description": "선물용 및 행사용 플라워 바스켓"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "화환",
+          "description": "개업식 등 공식 행사용 화환 제작"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "플라워 박스",
+          "description": "감도 높은 박스형 꽃 선물"
+        }
+      }
+    ]
+  },
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "예약제 운영",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "무인 운영",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "당일 픽업",
+      "value": true
+    }
+  ],
+  "knowsAbout": [
+    "플라워 디자인",
+    "꽃다발 제작",
+    "꽃바구니",
+    "화환",
+    "예약제 꽃집",
+    "무인 꽃집",
+    "강동구 꽃집"
+  ],
+  "slogan": "꽃이 일상이 되는 곳, DEWDEW(듀듀)",
+  "@id": "https://www.dewdew.kr/#organization"
+}
